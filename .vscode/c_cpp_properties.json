@@ -1,0 +1,44 @@
+{
+    "env": {
+        "Os2Include": "${workspaceFolder}/Examples/ST/STM3240G-EVAL/OS2",
+        "uCosIiSrc": "${workspaceFolder}/Software/uCOS-II/Source",
+        "HalDrvInc": "${workspaceFolder}/Examples/ST/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc",
+        "CmsisInc": "${workspaceFolder}/Examples/ST/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include",
+        "uC_Cpu": "${workspaceFolder}/Software/uC-CPU",
+        "uCosPorts": "${workspaceFolder}/Software/uCOS-II/Ports/ARM-Cortex-M4/Generic/RealView",
+        "SystemInclude": "D:/temp_keil_include/include"
+    },
+    "configurations": [
+        {
+            "defines": ["STM32F303xE", "ARM_MATH_CM4"],
+            "name": "windows",
+            "includePath": [
+                "${SystemInclude}",
+                "${uCosIiSrc}",
+                "${HalDrvInc}",
+                "${CmsisInc}",
+                "${uC_Cpu}",
+                "${uC_Cpu}/ARM-Cortex-M4/RealView",
+                "${uCosPorts}",
+                "${Os2Include}"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "${SystemInclude}",
+                    "${uCosIiSrc}",
+                    "${HalDrvInc}",
+                    "${CmsisInc}",
+                    "${uC_Cpu}",
+                    "${uC_Cpu}/ARM-Cortex-M4/RealView",
+                    "${uCosPorts}",
+                    "${Os2Include}"
+                ]
+            },
+            "cStandard": "gnu11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x86"
+        }
+    ],
+    "version": 4
+}
