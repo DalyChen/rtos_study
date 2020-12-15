@@ -1,11 +1,15 @@
 {
     "env": {
-        "Os2Include": "${workspaceFolder}/Examples/ST/STM3240G-EVAL/OS2",
-        "uCosIiSrc": "${workspaceFolder}/Software/uCOS-II/Source",
-        "HalDrvInc": "${workspaceFolder}/Examples/ST/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc",
-        "CmsisInc": "${workspaceFolder}/Examples/ST/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include",
-        "uC_Cpu": "${workspaceFolder}/Software/uC-CPU",
-        "uCosPorts": "${workspaceFolder}/Software/uCOS-II/Ports/ARM-Cortex-M4/Generic/RealView",
+        "BspInclude":   "${workspaceFolder}/Examples/ST/STM3240G-EVAL/BSP",
+        "Os2Include":   "${workspaceFolder}/Examples/ST/STM3240G-EVAL/OS2",
+        "HalDrvInc":    "${workspaceFolder}/Examples/ST/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/Inc",
+        "CmsisInc":     "${workspaceFolder}/Examples/ST/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/Include",
+        "ExpOs2":       "${workspaceFolder}/Examples/ST/STM3240G-EVAL/OS2",
+        "uC_Cpu":       "${workspaceFolder}/Software/uC-CPU",
+        "uC_LIB":       "${workspaceFolder}/Software/uC-LIB",
+        "uC_Serial":    "${workspaceFolder}/Software/uC-Serial",
+        "uCosPorts":    "${workspaceFolder}/Software/uCOS-II/Ports/ARM-Cortex-M4/Generic/RealView",
+        "uCosIiSrc":    "${workspaceFolder}/Software/uCOS-II/Source",
         "SystemInclude": "D:/temp_keil_include/include"
     },
     "configurations": [
@@ -14,25 +18,35 @@
             "name": "windows",
             "includePath": [
                 "${SystemInclude}",
-                "${uCosIiSrc}",
+                "${BspInclude}",
+                "${Os2Include}",
                 "${HalDrvInc}",
                 "${CmsisInc}",
+                "${ExpOs2}",
                 "${uC_Cpu}",
                 "${uC_Cpu}/ARM-Cortex-M4/RealView",
+                "${uC_LIB}",
+                "${uC_LIB}/Ports/ARM-Cortex-M4/RealView",
+                "${uC_Serial}/Driver/ST",
+                "${uC_Serial}/Line",
+                "${uC_Serial}/Source",
                 "${uCosPorts}",
-                "${Os2Include}"
+                "${uCosIiSrc}"
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
                     "${SystemInclude}",
-                    "${uCosIiSrc}",
+                    "${BspInclude}",
+                    "${Os2Include}",
                     "${HalDrvInc}",
                     "${CmsisInc}",
                     "${uC_Cpu}",
                     "${uC_Cpu}/ARM-Cortex-M4/RealView",
+                    "${uC_LIB}",
+                    "${uC_LIB}/Ports/ARM-Cortex-M4/RealView",
                     "${uCosPorts}",
-                    "${Os2Include}"
+                    "${uCosIiSrc}"
                 ]
             },
             "cStandard": "gnu11",
