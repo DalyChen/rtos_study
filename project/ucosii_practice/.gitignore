@@ -1,0 +1,9 @@
+bin/
+build/
+*.bak
+*.pmp
+Listings/*
+Objects/*
+.history/
+*.jdebug*
+*uvgui*
