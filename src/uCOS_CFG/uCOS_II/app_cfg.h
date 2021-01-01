@@ -9,14 +9,14 @@
 #ifndef  APP_CFG_MODULE_PRESENT
 #define  APP_CFG_MODULE_PRESENT
 
-#if 0
+#if 1
 /*
 *********************************************************************************************************
 *                                       MODULE ENABLE / DISABLE
 *********************************************************************************************************
 */
 
-#define  APP_CFG_SERIAL_EN                      DEF_ENABLED
+//#define  APP_CFG_SERIAL_EN                      DEF_ENABLED
 
 
 /*
