@@ -386,6 +386,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\src\app\main.c</FilePath>
             </File>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\app\led.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
