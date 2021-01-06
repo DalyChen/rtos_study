@@ -1,0 +1,35 @@
+{
+    "env": {
+        "McuInclude": "${workspaceFolder}/MCU",
+        "SystemInclude": "D:/temp_keil_include/include"
+    },
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${SystemInclude}",
+                "${McuInclude}/CMSIS_M4",
+                "${McuInclude}/STM32F4XX",
+                "${McuInclude}/STM32F4xx_DSP_StdPeriph/inc"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "${SystemInclude}",
+                    "${McuInclude}/CMSIS_M4",
+                    "${McuInclude}/STM32F4XX",
+                    "${McuInclude}/STM32F4xx_DSP_StdPeriph/inc"
+                ]
+            },
+            "defines": [
+                "STM32F40_41xxx",
+                "USE_STDPERIPH_DRIVER",
+                "ARM_MATH_CM4",
+            ],
+            "cStandard": "c99",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "msvc-x64"
+        }
+    ],
+    "version": 4
+}

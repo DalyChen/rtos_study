@@ -1,0 +1,9 @@
+*.bak
+Listings/*
+Objects/*
+.history/
+*.jdebug*
+JLink*
+DebugConfig/
+*.log
+*.uvguix.*
