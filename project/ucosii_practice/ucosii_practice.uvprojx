@@ -335,9 +335,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>USE_HAL_DRIVER, STM32F407xx, __FPU_PRESENT=1</Define>
+              <Define>USE_HAL_DRIVER, STM32F407xx,</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\src\uCOS_II;..\..\src\uCOS_II\Ports\ARM-Cortex-M4\Generic\RealView;..\..\src\uCOS_CFG\uCOS_II;..\..\src\mcu\CMSIS\Include;..\..\src\mcu\CMSIS\Core\Include;..\..\src\mcu\STM32F4xx_HAL_Driver\Inc;..\..\src\uC_CPU;..\..\src\uC_CPU\ARM_Cortex_M4\RealView;..\..\src\uC_LIB;..\..\src\app</IncludePath>
+              <IncludePath>..\..\src\uCOS_II;..\..\src\uCOS_II\Ports\ARM-Cortex-M4\Generic\RealView;..\..\src\uCOS_CFG\uCOS_II;..\..\src\mcu\CMSIS\Include;..\..\src\mcu\CMSIS\Core\Include;..\..\src\mcu\STM32F4xx_HAL_Driver\Inc;..\..\src\uC_CPU;..\..\src\uC_CPU\ARM_Cortex_M4\RealView;..\..\src\uC_LIB;..\..\src\app;..\..\src\mcu\CMSIS\Device\ST\STM32F4xx\Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -401,6 +401,31 @@
               <FileType>1</FileType>
               <FilePath>..\..\src\app\app_hooks.c</FilePath>
             </File>
+            <File>
+              <FileName>startup.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\src\app\startup.s</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_int.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\app\bsp_int.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_os.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\app\bsp_os.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_os.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\src\app\bsp_os.h</FilePath>
+            </File>
+            <File>
+              <FileName>bsp.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\src\app\bsp.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -430,6 +455,64 @@
               <FileName>startup_stm32f407xx.s</FileName>
               <FileType>2</FileType>
               <FilePath>..\..\src\mcu\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>0</IncludeInBuild>
+                  <AlwaysBuild>2</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                  <ComprImg>1</ComprImg>
+                </CommonProperty>
+                <FileArmAds>
+                  <Aads>
+                    <interw>2</interw>
+                    <Ropi>2</Ropi>
+                    <Rwpi>2</Rwpi>
+                    <thumb>2</thumb>
+                    <SplitLS>2</SplitLS>
+                    <SwStkChk>2</SwStkChk>
+                    <NoWarn>2</NoWarn>
+                    <uSurpInc>2</uSurpInc>
+                    <useXO>2</useXO>
+                    <uClangAs>2</uClangAs>
+                    <VariousControls>
+                      <MiscControls></MiscControls>
+                      <Define></Define>
+                      <Undefine></Undefine>
+                      <IncludePath></IncludePath>
+                    </VariousControls>
+                  </Aads>
+                </FileArmAds>
+              </FileOption>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\mcu\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\mcu\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\mcu\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_cortex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\mcu\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1034,6 +1117,31 @@
               <FileType>1</FileType>
               <FilePath>..\..\src\app\app_hooks.c</FilePath>
             </File>
+            <File>
+              <FileName>startup.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\src\app\startup.s</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_int.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\app\bsp_int.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_os.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\app\bsp_os.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_os.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\src\app\bsp_os.h</FilePath>
+            </File>
+            <File>
+              <FileName>bsp.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\src\app\bsp.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1063,6 +1171,26 @@
               <FileName>startup_stm32f407xx.s</FileName>
               <FileType>2</FileType>
               <FilePath>..\..\src\mcu\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\mcu\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\mcu\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\mcu\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_cortex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\mcu\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c</FilePath>
             </File>
           </Files>
         </Group>

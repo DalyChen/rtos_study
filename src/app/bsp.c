@@ -44,9 +44,10 @@
 
 #define   BSP_MODULE
 #include  <bsp.h>
-//#include  <bsp_os.h>
+#include  <bsp_os.h>
 
 #include  <stm32f4xx_hal.h>
+//#include "stm32f4xx_hal_rcc.h"
 
 
 /*
@@ -161,47 +162,47 @@ static  void  BSP_LED_Init        (void);
 
 void  BSP_Init (void)
 {
-#if 0
-    RCC_OscInitTypeDef  RCC_OscInitStruct;
-    RCC_ClkInitTypeDef  RCC_ClkInitStruct;
+#if 1
+//    RCC_OscInitTypeDef  RCC_OscInitStruct;
+//    RCC_ClkInitTypeDef  RCC_ClkInitStruct;
 
     BSP_IntInit();
 
-    HAL_RCC_DeInit();
+//    HAL_RCC_DeInit();
 
-    __HAL_RCC_PWR_CLK_ENABLE();                                 /* Enable Power Control clock.                          */
+//    __HAL_RCC_PWR_CLK_ENABLE();                                 /* Enable Power Control clock.                          */
                                                                 /* See Note 3.                                          */
-    __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
+//    __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
 
                                                                 /* PLLCLK    = HSE * (PLLN / PLLM)      = 336MHz.       */
                                                                 /* SYSCLK    = PLLCLK / PLLP            = 168MHz.       */
                                                                 /* OTG_FSCLK = PLLCLK / PLLQ            =  48MHz.       */
-    RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
-    RCC_OscInitStruct.HSEState       = RCC_HSE_ON;
-    RCC_OscInitStruct.PLL.PLLState   = RCC_PLL_ON;
-    RCC_OscInitStruct.PLL.PLLSource  = RCC_PLLSOURCE_HSE;
-    RCC_OscInitStruct.PLL.PLLM       = BSP_BIT_RCC_PLLCFGR_PLLM;
-    RCC_OscInitStruct.PLL.PLLN       = BSP_BIT_RCC_PLLCFGR_PLLN;
-    RCC_OscInitStruct.PLL.PLLP       = BSP_BIT_RCC_PLLCFGR_PLLP;
-    RCC_OscInitStruct.PLL.PLLQ       = BSP_BIT_RCC_PLLCFGR_PLLQ;
-    HAL_RCC_OscConfig(&RCC_OscInitStruct);
+//    RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+//    RCC_OscInitStruct.HSEState       = RCC_HSE_ON;
+//    RCC_OscInitStruct.PLL.PLLState   = RCC_PLL_ON;
+//    RCC_OscInitStruct.PLL.PLLSource  = RCC_PLLSOURCE_HSE;
+//    RCC_OscInitStruct.PLL.PLLM       = BSP_BIT_RCC_PLLCFGR_PLLM;
+//    RCC_OscInitStruct.PLL.PLLN       = BSP_BIT_RCC_PLLCFGR_PLLN;
+//    RCC_OscInitStruct.PLL.PLLP       = BSP_BIT_RCC_PLLCFGR_PLLP;
+//    RCC_OscInitStruct.PLL.PLLQ       = BSP_BIT_RCC_PLLCFGR_PLLQ;
+//    HAL_RCC_OscConfig(&RCC_OscInitStruct);
 
 
-    RCC_ClkInitStruct.ClockType      = RCC_CLOCKTYPE_SYSCLK |
-                                       RCC_CLOCKTYPE_HCLK   |
-                                       RCC_CLOCKTYPE_PCLK1  |
-                                       RCC_CLOCKTYPE_PCLK2;
-    RCC_ClkInitStruct.SYSCLKSource   = RCC_SYSCLKSOURCE_PLLCLK;
-    RCC_ClkInitStruct.AHBCLKDivider  = RCC_SYSCLK_DIV1;          /* HCLK    = AHBCLK  = PLL / AHBPRES(1) = 168MHz.       */
-    RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV4;           /* APB1CLK = AHBCLK  / APB1DIV(4)       = 42MHz (max).  */
-    RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;           /* APB2CLK = AHBCLK  / APB2DIV(2)       = 84MHz.        */
-    HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_5);
+//    RCC_ClkInitStruct.ClockType      = RCC_CLOCKTYPE_SYSCLK |
+//                                       RCC_CLOCKTYPE_HCLK   |
+//                                       RCC_CLOCKTYPE_PCLK1  |
+//                                       RCC_CLOCKTYPE_PCLK2;
+//    RCC_ClkInitStruct.SYSCLKSource   = RCC_SYSCLKSOURCE_PLLCLK;
+//    RCC_ClkInitStruct.AHBCLKDivider  = RCC_SYSCLK_DIV1;          /* HCLK    = AHBCLK  = PLL / AHBPRES(1) = 168MHz.       */
+//    RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV4;           /* APB1CLK = AHBCLK  / APB1DIV(4)       = 42MHz (max).  */
+//    RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;           /* APB2CLK = AHBCLK  / APB2DIV(2)       = 84MHz.        */
+//    HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_5);
 
                                                                 /* STM32F405x/407x/415x/417x Revision Z devices: ...... */
-    if (HAL_GetREVID() == 0x1001)                               /* ....prefetch is supported                            */
-    {
-      __HAL_FLASH_PREFETCH_BUFFER_ENABLE();                     /* Enable the Flash prefetch                            */
-    }
+//    if (HAL_GetREVID() == 0x1001)                               /* ....prefetch is supported                            */
+//    {
+//      __HAL_FLASH_PREFETCH_BUFFER_ENABLE();                     /* Enable the Flash prefetch                            */
+//    }
 
     BSP_LED_Init();                                             /* Init LEDs.                                           */
 
@@ -234,7 +235,7 @@ CPU_INT32U  BSP_CPU_ClkFreq (void)
 {
     CPU_INT32U  hclk_freq;
 
-#if 0
+#if 1
     hclk_freq = HAL_RCC_GetHCLKFreq();
 #endif
     return (hclk_freq);
@@ -262,8 +263,8 @@ CPU_INT32U  BSP_CPU_ClkFreq (void)
 
 HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
 {
-#if 0
-    HAL_NVIC_SetPriorityGrouping(0);
+#if 1
+//    HAL_NVIC_SetPriorityGrouping(0);
 
     if (OSRunning > 0u) {                                       /*Check if multi-tasking has started.                   */
         BSP_Tick_Init();
@@ -290,7 +291,7 @@ HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
 */
 void BSP_Tick_Init (void)
 {
-#if 0
+#if 1
     CPU_INT32U  cpu_clk_freq;
     CPU_INT32U  cnts;
 

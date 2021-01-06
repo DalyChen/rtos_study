@@ -155,12 +155,12 @@ int main(void)
     CPU_INT08U  err;
 #endif
 
-//    HAL_Init();                                                 /* See Note 1.                                          */
+    HAL_Init();                                                 /* See Note 1.                                          */
 
     Mem_Init();                                                 /* Initialize Memory Managment Module                   */
     Math_Init();                                                /* Initialize Mathematical Module                       */
 
-//    BSP_IntDisAll();                                            /* Disable all Interrupts.                              */
+    BSP_IntDisAll();                                            /* Disable all Interrupts.                              */
 
     OSInit();                                                   /* Init uC/OS-II.                                       */
 
