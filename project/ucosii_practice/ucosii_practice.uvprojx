@@ -337,7 +337,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx, USE_STDPERIPH_DRIVER, ARM_MATH_CM4, __TARGET_FPU_VFP, __FPU_PRESENT=1</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\src\MCU\CMSIS_M4;..\..\src\MCU\STM32F4XX;..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc;..\..\src\ucos_ii;..\..\src\ucos_ii_cfg;..\..\src\ucos_ii\Ports\ARM-Cortex-M4\RealView;..\..\src\ucos_ii_lib;..\..\src\ucos_ii_cpu;..\..\src\ucos_ii_cpu\ARM-Cortex-M4\RealView</IncludePath>
+              <IncludePath>..\..\src\MCU\CMSIS_M4;..\..\src\MCU\STM32F4XX;..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc;..\..\src\ucos_ii;..\..\src\ucos_ii_cfg;..\..\src\ucos_ii\Ports\ARM-Cortex-M4\RealView;..\..\src\ucos_ii_lib;..\..\src\ucos_ii_cpu;..\..\src\ucos_ii_cpu\ARM-Cortex-M4\RealView;..\..\src\bsp;..\..\src\app</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1192,6 +1192,11 @@
               <FileName>cpu_bsp.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\src\bsp\cpu_bsp.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\bsp\bsp.c</FilePath>
             </File>
           </Files>
         </Group>

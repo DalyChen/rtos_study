@@ -10,6 +10,13 @@
             "includePath": [
                 "${SystemInclude}",
                 "${workspaceFolder}/app",
+                "${workspaceFolder}/bsp",
+                "${workspaceFolder}/ucos_ii",
+                "${workspaceFolder}/ucos_ii/Ports/ARM-Cortex-M4/RealView",
+                "${workspaceFolder}/ucos_ii_cfg",
+                "${workspaceFolder}/ucos_ii_cpu",
+                "${workspaceFolder}/ucos_ii_cpu/ARM-Cortex-M4/RealView",
+                "${workspaceFolder}/ucos_ii_lib",
                 "${McuInclude}/CMSIS_M4",
                 "${McuInclude}/STM32F4XX",
                 "${McuInclude}/STM32F4xx_DSP_StdPeriph/inc"
@@ -19,6 +26,12 @@
                 "path": [
                     "${SystemInclude}",
                     "${workspaceFolder}/app",
+                    "${workspaceFolder}/bsp",
+                    "${workspaceFolder}/ucos_ii",
+                    "${workspaceFolder}/ucos_ii_cfg",
+                    "${workspaceFolder}/ucos_ii_cpu",
+                    "${workspaceFolder}/ucos_ii_cpu/ARM-Cortex-M4/RealView",
+                    "${workspaceFolder}/ucos_ii_lib",
                     "${McuInclude}/CMSIS_M4",
                     "${McuInclude}/STM32F4XX",
                     "${McuInclude}/STM32F4xx_DSP_StdPeriph/inc"

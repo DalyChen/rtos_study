@@ -37,7 +37,7 @@
 */
 
 #include  <ucos_ii.h>
-//#include  <stm32f4xx_hal.h>
+#include <bsp.h>
 
 
 /*
@@ -255,7 +255,7 @@ void  App_TimeTickHook (void)
 #if (APP_CFG_PROBE_OS_PLUGIN_EN == DEF_ENABLED) && (OS_PROBE_HOOKS_EN > 0)
     OSProbe_TickHook();
 #endif
-//    HAL_IncTick();                                              /* STM32CubeF4 library function call.                   */
+    inc_tick();
 }
 #endif
 #endif

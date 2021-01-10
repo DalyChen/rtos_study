@@ -45,7 +45,7 @@
 #define    CPU_BSP_MODULE
 #include  <cpu_core.h>
 
-//#include  <bsp.h>
+#include  <bsp.h>
 
 /*
 *********************************************************************************************************
@@ -183,7 +183,7 @@ void  CPU_TS_TmrInit (void)
     CPU_INT32U  fclk_freq;
 
 
-//    fclk_freq = BSP_CPU_ClkFreq();
+    fclk_freq = BSP_CPU_ClkFreq();
 
     CPU_REG_DEM_CR     |= (CPU_INT32U)CPU_BIT_DEM_CR_TRCENA;    /* Enable Cortex-M4's DWT CYCCNT reg.                   */
     CPU_REG_DWT_CYCCNT  = (CPU_INT32U)0u;
@@ -352,7 +352,7 @@ CPU_INT64U  CPU_TS32_to_uSec (CPU_TS32  ts_cnts)
     CPU_INT64U  fclk_freq;
 
 
-//    fclk_freq = BSP_CPU_ClkFreq();
+    fclk_freq = BSP_CPU_ClkFreq();
     ts_us     = ts_cnts / (fclk_freq / DEF_TIME_NBR_uS_PER_SEC);
 
     return (ts_us);
