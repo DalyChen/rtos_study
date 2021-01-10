@@ -14,17 +14,21 @@
 #include "led.h"
 #include "stm32f4xx.h"
 
-// #include <stdint.h>
+#include <os_cpu.h>
 
 
 
 void bsp_init(void)
 {
-    SysTick_Config(SystemCoreClock / 1000);
-    led_config();
+    OS_CPU_SR cpu_sr = OS_CPU_SR_Save();        // 保存中断状态，并禁中断
 
+    SysTick_Config(SystemCoreClock / 1000);
+
+    led_config();
     led0_on();
     led1_on();
+
+    OS_CPU_SR_Restore(cpu_sr);                  // 回复中断状态
 }
 
 

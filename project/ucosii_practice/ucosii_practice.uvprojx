@@ -1198,6 +1198,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\src\bsp\bsp.c</FilePath>
             </File>
+            <File>
+              <FileName>bsp_int.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\bsp\bsp_int.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

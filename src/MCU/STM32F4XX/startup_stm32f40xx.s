@@ -67,22 +67,41 @@ __heap_limit
                 EXPORT  __Vectors_End
                 EXPORT  __Vectors_Size
 
+                IMPORT  OS_CPU_PendSVHandler
+                IMPORT  OS_CPU_SysTickHandler 
+
 __Vectors       DCD     __initial_sp               ; Top of Stack
                 DCD     Reset_Handler              ; Reset Handler
-                DCD     NMI_Handler                ; NMI Handler
-                DCD     HardFault_Handler          ; Hard Fault Handler
-                DCD     MemManage_Handler          ; MPU Fault Handler
-                DCD     BusFault_Handler           ; Bus Fault Handler
-                DCD     UsageFault_Handler         ; Usage Fault Handler
-                DCD     0                          ; Reserved
-                DCD     0                          ; Reserved
-                DCD     0                          ; Reserved
-                DCD     0                          ; Reserved
-                DCD     SVC_Handler                ; SVCall Handler
-                DCD     DebugMon_Handler           ; Debug Monitor Handler
-                DCD     0                          ; Reserved
-                DCD     PendSV_Handler             ; PendSV Handler
-                DCD     SysTick_Handler            ; SysTick Handler
+
+                DCD     App_NMI_ISR                       ; NMI Handler
+                DCD     App_Fault_ISR                     ; Hard Fault Handler
+                DCD     App_MemFault_ISR                  ; MPU Fault Handler
+                DCD     App_BusFault_ISR                  ; Bus Fault Handler
+                DCD     App_UsageFault_ISR                ; Usage Fault Handler
+                DCD     App_Spurious_ISR                  ; Reserved
+                DCD     App_Spurious_ISR                  ; Reserved
+                DCD     App_Spurious_ISR                  ; Reserved
+                DCD     App_Spurious_ISR                  ; Reserved
+                DCD     App_Spurious_ISR                  ; SVCall Handler
+                DCD     App_Spurious_ISR                  ; Debug Monitor Handler
+                DCD     App_Spurious_ISR                  ; Reserved
+                DCD     OS_CPU_PendSVHandler              ; PendSV Handler
+                DCD     OS_CPU_SysTickHandler             ; SysTick Handler
+
+                ;DCD     NMI_Handler                ; NMI Handler
+                ;DCD     HardFault_Handler          ; Hard Fault Handler
+                ;DCD     MemManage_Handler          ; MPU Fault Handler
+                ;DCD     BusFault_Handler           ; Bus Fault Handler
+                ;DCD     UsageFault_Handler         ; Usage Fault Handler
+                ;DCD     0                          ; Reserved
+                ;DCD     0                          ; Reserved
+                ;DCD     0                          ; Reserved
+                ;DCD     0                          ; Reserved
+                ;DCD     SVC_Handler                ; SVCall Handler
+                ;DCD     DebugMon_Handler           ; Debug Monitor Handler
+                ;DCD     0                          ; Reserved
+                ;DCD     PendSV_Handler             ; PendSV Handler
+                ;DCD     SysTick_Handler            ; SysTick Handler
 
                 ; External Interrupts
                 DCD     WWDG_IRQHandler                   ; Window WatchDog                                        
@@ -188,47 +207,79 @@ Reset_Handler    PROC
 
 ; Dummy Exception Handlers (infinite loops which can be modified)
 
-NMI_Handler     PROC
-                EXPORT  NMI_Handler                [WEAK]
+App_NMI_ISR      PROC
+                EXPORT  App_NMI_ISR                   [WEAK]
                 B       .
                 ENDP
-HardFault_Handler\
+App_Fault_ISR\
                 PROC
-                EXPORT  HardFault_Handler          [WEAK]
+                EXPORT  App_Fault_ISR                 [WEAK]
                 B       .
                 ENDP
-MemManage_Handler\
+App_MemFault_ISR\
                 PROC
-                EXPORT  MemManage_Handler          [WEAK]
+                EXPORT  App_MemFault_ISR             [WEAK]
                 B       .
                 ENDP
-BusFault_Handler\
+App_BusFault_ISR\
                 PROC
-                EXPORT  BusFault_Handler           [WEAK]
+                EXPORT  App_BusFault_ISR             [WEAK]
                 B       .
                 ENDP
-UsageFault_Handler\
+App_UsageFault_ISR\
                 PROC
-                EXPORT  UsageFault_Handler         [WEAK]
+                EXPORT  App_UsageFault_ISR            [WEAK]
                 B       .
                 ENDP
-SVC_Handler     PROC
-                EXPORT  SVC_Handler                [WEAK]
-                B       .
-                ENDP
-DebugMon_Handler\
+App_Spurious_ISR\
                 PROC
-                EXPORT  DebugMon_Handler           [WEAK]
+                EXPORT  App_Spurious_ISR                [WEAK]
                 B       .
                 ENDP
-PendSV_Handler  PROC
-                EXPORT  PendSV_Handler             [WEAK]
+App_Reserved_ISR\
+                PROC
+                EXPORT  App_Reserved_ISR                [WEAK]
                 B       .
                 ENDP
-SysTick_Handler PROC
-                EXPORT  SysTick_Handler            [WEAK]
-                B       .
-                ENDP
+
+                ALIGN
+
+;NMI_Handler     PROC
+                ;EXPORT  NMI_Handler                [WEAK]
+                ;B       .
+                ;ENDP
+;HardFault_Handler PROC
+                ;EXPORT  HardFault_Handler          [WEAK]
+                ;B       .
+                ;ENDP
+;MemManage_Handler PROC
+                ;EXPORT  MemManage_Handler          [WEAK]
+                ;B       .
+                ;ENDP
+;BusFault_Handler PROC
+                ;EXPORT  BusFault_Handler           [WEAK]
+                ;B       .
+                ;ENDP
+;UsageFault_Handler PROC
+                ;EXPORT  UsageFault_Handler         [WEAK]
+                ;B       .
+                ;ENDP
+;SVC_Handler     PROC
+                ;EXPORT  SVC_Handler                [WEAK]
+                ;B       .
+                ;ENDP
+;DebugMon_Handler PROC
+                ;EXPORT  DebugMon_Handler           [WEAK]
+                ;B       .
+                ;ENDP
+;PendSV_Handler  PROC
+                ;EXPORT  PendSV_Handler             [WEAK]
+                ;B       .
+                ;ENDP
+;SysTick_Handler PROC
+                ;EXPORT  SysTick_Handler            [WEAK]
+                ;B       .
+                ;ENDP
 
 Default_Handler PROC
 
