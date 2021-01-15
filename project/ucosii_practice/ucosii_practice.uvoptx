@@ -140,7 +140,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>JL2CM3</Key>
-          <Name>-U86802757 -O47 -S5 -ZTIFSpeedSel1000 -A0 -C0 -JU1 -JI127.0.0.1 -JP0 -RST0 -N00("ARM CoreSight JTAG-DP") -D00(4BA00477) -L00(4) -N01("Unknown JTAG device") -D01(06413041) -L01(5) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TFE0 -FO15 -FD20000000 -FC1000 -FN1 -FF0STM32F4xx_512.FLM -FS08000000 -FL080000 -FP0($$Device:STM32F407ZETx$CMSIS\Flash\STM32F4xx_512.FLM)</Name>
+          <Name>-U86802757 -O111 -S5 -ZTIFSpeedSel1000 -A0 -C0 -JU1 -JI127.0.0.1 -JP0 -RST0 -N00("ARM CoreSight SW-DP") -D00(2BA01477) -L00(4) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TFE0 -FO15 -FD20000000 -FC1000 -FN1 -FF0STM32F4xx_512.FLM -FS08000000 -FL080000 -FP0($$Device:STM32F407ZETx$CMSIS\Flash\STM32F4xx_512.FLM)</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -148,7 +148,24 @@
           <Name>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0STM32F4xx_512 -FS08000000 -FL080000 -FP0($$Device:STM32F407ZETx$CMSIS\Flash\STM32F4xx_512.FLM))</Name>
         </SetRegEntry>
       </TargetDriverDllRegistry>
-      <Breakpoint/>
+      <Breakpoint>
+        <Bp>
+          <Number>0</Number>
+          <Type>0</Type>
+          <LineNumber>187</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134218280</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>..\..\src\ucos_src\mcu\STM32F4XX\startup_stm32f40xx.s</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\ucosii_practice\../../src/ucos_src/mcu/STM32F4XX/startup_stm32f40xx.s\187</Expression>
+        </Bp>
+      </Breakpoint>
       <WatchWindow1>
         <Ww>
           <count>0</count>
@@ -241,19 +258,19 @@
 
   <Group>
     <GroupName>cmsis</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>2</GroupNumber>
       <FileNumber>3</FileNumber>
-      <FileType>5</FileType>
+      <FileType>4</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\CMSIS_M4\arm_common_tables.h</PathWithFileName>
-      <FilenameWithoutPath>arm_common_tables.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\CMSIS_M4\arm_cortexM4lf_math.lib</PathWithFileName>
+      <FilenameWithoutPath>arm_cortexM4lf_math.lib</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -264,8 +281,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\CMSIS_M4\arm_const_structs.h</PathWithFileName>
-      <FilenameWithoutPath>arm_const_structs.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\CMSIS_M4\arm_common_tables.h</PathWithFileName>
+      <FilenameWithoutPath>arm_common_tables.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -276,8 +293,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\CMSIS_M4\arm_math.h</PathWithFileName>
-      <FilenameWithoutPath>arm_math.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\CMSIS_M4\arm_const_structs.h</PathWithFileName>
+      <FilenameWithoutPath>arm_const_structs.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -288,8 +305,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\CMSIS_M4\core_cm4.h</PathWithFileName>
-      <FilenameWithoutPath>core_cm4.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\CMSIS_M4\arm_math.h</PathWithFileName>
+      <FilenameWithoutPath>arm_math.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -300,8 +317,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\CMSIS_M4\core_cmFunc.h</PathWithFileName>
-      <FilenameWithoutPath>core_cmFunc.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\CMSIS_M4\core_cm4.h</PathWithFileName>
+      <FilenameWithoutPath>core_cm4.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -312,8 +329,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\CMSIS_M4\core_cmInstr.h</PathWithFileName>
-      <FilenameWithoutPath>core_cmInstr.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\CMSIS_M4\core_cmFunc.h</PathWithFileName>
+      <FilenameWithoutPath>core_cmFunc.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -324,20 +341,20 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\CMSIS_M4\core_cmSimd.h</PathWithFileName>
-      <FilenameWithoutPath>core_cmSimd.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\CMSIS_M4\core_cmInstr.h</PathWithFileName>
+      <FilenameWithoutPath>core_cmInstr.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>2</GroupNumber>
       <FileNumber>10</FileNumber>
-      <FileType>4</FileType>
+      <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\CMSIS_M4\arm_cortexM4lf_math.lib</PathWithFileName>
-      <FilenameWithoutPath>arm_cortexM4lf_math.lib</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\CMSIS_M4\core_cmSimd.h</PathWithFileName>
+      <FilenameWithoutPath>core_cmSimd.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -352,24 +369,24 @@
     <File>
       <GroupNumber>3</GroupNumber>
       <FileNumber>11</FileNumber>
-      <FileType>1</FileType>
+      <FileType>2</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4XX\system_stm32f4xx.c</PathWithFileName>
-      <FilenameWithoutPath>system_stm32f4xx.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4XX\startup_stm32f40xx.s</PathWithFileName>
+      <FilenameWithoutPath>startup_stm32f40xx.s</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
       <FileNumber>12</FileNumber>
-      <FileType>5</FileType>
+      <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4XX\stm32f4xx.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4XX\system_stm32f4xx.c</PathWithFileName>
+      <FilenameWithoutPath>system_stm32f4xx.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -380,8 +397,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4XX\stm32f4xx_conf.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_conf.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4XX\stm32f4xx.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -392,20 +409,20 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4XX\system_stm32f4xx.h</PathWithFileName>
-      <FilenameWithoutPath>system_stm32f4xx.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4XX\stm32f4xx_conf.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_conf.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
       <FileNumber>15</FileNumber>
-      <FileType>2</FileType>
+      <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4XX\startup_stm32f40xx.s</PathWithFileName>
-      <FilenameWithoutPath>startup_stm32f40xx.s</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4XX\system_stm32f4xx.h</PathWithFileName>
+      <FilenameWithoutPath>system_stm32f4xx.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -424,7 +441,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\misc.c</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\misc.c</PathWithFileName>
       <FilenameWithoutPath>misc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -436,7 +453,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_adc.c</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_adc.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_adc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -448,7 +465,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_can.c</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_can.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_can.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -460,7 +477,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_cec.c</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_cec.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_cec.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -472,7 +489,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_crc.c</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_crc.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_crc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -484,7 +501,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_cryp.c</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_cryp.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_cryp.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -496,7 +513,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_cryp_aes.c</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_cryp_aes.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_cryp_aes.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -508,7 +525,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_cryp_des.c</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_cryp_des.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_cryp_des.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -520,7 +537,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_cryp_tdes.c</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_cryp_tdes.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_cryp_tdes.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -532,7 +549,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_dac.c</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dac.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_dac.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -544,7 +561,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_dbgmcu.c</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dbgmcu.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_dbgmcu.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -556,7 +573,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_dcmi.c</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dcmi.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_dcmi.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -568,7 +585,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_dfsdm.c</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dfsdm.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_dfsdm.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -580,7 +597,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_dma.c</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dma.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_dma.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -592,7 +609,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_dma2d.c</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dma2d.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_dma2d.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -604,7 +621,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_dsi.c</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dsi.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_dsi.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -616,7 +633,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_exti.c</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_exti.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_exti.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -628,7 +645,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_flash.c</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_flash.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_flash.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -640,7 +657,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_flash_ramfunc.c</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_flash_ramfunc.c</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_flash_ramfunc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -652,8 +669,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_fmc.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_fmc.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_fmpi2c.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_fmpi2c.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -664,8 +681,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_fmpi2c.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_fmpi2c.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_fsmc.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_fsmc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -676,8 +693,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_fsmc.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_fsmc.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_gpio.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_gpio.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -688,8 +705,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_gpio.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_gpio.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_hash.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_hash.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -700,8 +717,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_hash.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_hash.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_hash_md5.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_hash_md5.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -712,8 +729,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_hash_md5.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_hash_md5.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_hash_sha1.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_hash_sha1.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -724,8 +741,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_hash_sha1.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_hash_sha1.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_i2c.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_i2c.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -736,8 +753,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_i2c.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_i2c.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_iwdg.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_iwdg.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -748,8 +765,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_iwdg.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_iwdg.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_lptim.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_lptim.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -760,8 +777,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_lptim.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_lptim.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_ltdc.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_ltdc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -772,8 +789,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_ltdc.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_ltdc.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_pwr.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_pwr.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -784,8 +801,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_pwr.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_pwr.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_qspi.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_qspi.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -796,8 +813,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_qspi.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_qspi.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_rcc.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_rcc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -808,8 +825,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_rcc.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_rcc.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_rng.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_rng.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -820,8 +837,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_rng.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_rng.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_rtc.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_rtc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -832,8 +849,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_rtc.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_rtc.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_sai.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_sai.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -844,8 +861,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_sai.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_sai.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_sdio.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_sdio.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -856,8 +873,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_sdio.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_sdio.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_spdifrx.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_spdifrx.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -868,20 +885,20 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_spdifrx.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_spdifrx.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_spi.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_spi.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>4</GroupNumber>
       <FileNumber>54</FileNumber>
-      <FileType>5</FileType>
+      <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\misc.h</PathWithFileName>
-      <FilenameWithoutPath>misc.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_syscfg.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_syscfg.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -892,8 +909,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_spi.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_spi.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_tim.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_tim.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -904,8 +921,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_syscfg.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_syscfg.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_usart.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_usart.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -916,32 +933,32 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_tim.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_tim.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_wwdg.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_wwdg.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>4</GroupNumber>
       <FileNumber>58</FileNumber>
-      <FileType>1</FileType>
+      <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_usart.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_usart.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\misc.h</PathWithFileName>
+      <FilenameWithoutPath>misc.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>4</GroupNumber>
       <FileNumber>59</FileNumber>
-      <FileType>1</FileType>
+      <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_wwdg.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_wwdg.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_adc.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_adc.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -952,8 +969,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_adc.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_adc.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_can.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_can.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -964,8 +981,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_can.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_can.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_cec.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_cec.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -976,8 +993,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_cec.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_cec.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_crc.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_crc.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -988,8 +1005,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_crc.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_crc.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_cryp.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_cryp.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1000,8 +1017,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_cryp.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_cryp.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dac.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_dac.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1012,8 +1029,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_dac.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_dac.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dbgmcu.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_dbgmcu.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1024,8 +1041,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_dbgmcu.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_dbgmcu.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dcmi.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_dcmi.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1036,8 +1053,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_dcmi.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_dcmi.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dfsdm.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_dfsdm.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1048,8 +1065,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_dfsdm.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_dfsdm.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dma.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_dma.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1060,8 +1077,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_dma.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_dma.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dma2d.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_dma2d.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1072,8 +1089,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_dma2d.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_dma2d.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dsi.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_dsi.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1084,8 +1101,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_dsi.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_dsi.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_exti.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_exti.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1096,8 +1113,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_exti.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_exti.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_flash.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_flash.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1108,8 +1125,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_flash.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_flash.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_flash_ramfunc.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_flash_ramfunc.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1120,8 +1137,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_flash_ramfunc.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_flash_ramfunc.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_fmc.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_fmc.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1132,8 +1149,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_fmc.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_fmc.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_fmpi2c.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_fmpi2c.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1144,8 +1161,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_fmpi2c.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_fmpi2c.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_fsmc.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_fsmc.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1156,8 +1173,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_fsmc.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_fsmc.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_gpio.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_gpio.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1168,8 +1185,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_gpio.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_gpio.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_hash.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_hash.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1180,8 +1197,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_hash.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_hash.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_i2c.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_i2c.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1192,8 +1209,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_i2c.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_i2c.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_iwdg.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_iwdg.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1204,8 +1221,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_iwdg.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_iwdg.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_lptim.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_lptim.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1216,8 +1233,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_lptim.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_lptim.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_ltdc.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_ltdc.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1228,8 +1245,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_ltdc.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_ltdc.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_pwr.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_pwr.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1240,8 +1257,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_pwr.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_pwr.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_qspi.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_qspi.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1252,8 +1269,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_qspi.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_qspi.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_rcc.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_rcc.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1264,8 +1281,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_rcc.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_rcc.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_rng.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_rng.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1276,8 +1293,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_rng.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_rng.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_rtc.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_rtc.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1288,8 +1305,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_rtc.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_rtc.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_sai.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_sai.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1300,8 +1317,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_sai.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_sai.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_sdio.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_sdio.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1312,8 +1329,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_sdio.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_sdio.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_spdifrx.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_spdifrx.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1324,8 +1341,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_spdifrx.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_spdifrx.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_spi.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_spi.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1336,8 +1353,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_spi.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_spi.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_syscfg.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_syscfg.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1348,8 +1365,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_syscfg.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_syscfg.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_tim.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_tim.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1360,8 +1377,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_tim.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_tim.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_usart.h</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_usart.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1372,19 +1389,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_usart.h</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_usart.h</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>4</GroupNumber>
-      <FileNumber>96</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_wwdg.h</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_wwdg.h</PathWithFileName>
       <FilenameWithoutPath>stm32f4xx_wwdg.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1392,11 +1397,23 @@
   </Group>
 
   <Group>
-    <GroupName>ucos_ii/core</GroupName>
+    <GroupName>ucos_ii/bsp</GroupName>
     <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>96</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_bsp\app_hooks.c</PathWithFileName>
+      <FilenameWithoutPath>app_hooks.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
     <File>
       <GroupNumber>5</GroupNumber>
       <FileNumber>97</FileNumber>
@@ -1404,8 +1421,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii\os_core.c</PathWithFileName>
-      <FilenameWithoutPath>os_core.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_bsp\bsp.c</PathWithFileName>
+      <FilenameWithoutPath>bsp.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1416,8 +1433,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii\os_flag.c</PathWithFileName>
-      <FilenameWithoutPath>os_flag.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_bsp\bsp_int.c</PathWithFileName>
+      <FilenameWithoutPath>bsp_int.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1428,172 +1445,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii\os_mbox.c</PathWithFileName>
-      <FilenameWithoutPath>os_mbox.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>5</GroupNumber>
-      <FileNumber>100</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii\os_mem.c</PathWithFileName>
-      <FilenameWithoutPath>os_mem.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>5</GroupNumber>
-      <FileNumber>101</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii\os_mutex.c</PathWithFileName>
-      <FilenameWithoutPath>os_mutex.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>5</GroupNumber>
-      <FileNumber>102</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii\os_q.c</PathWithFileName>
-      <FilenameWithoutPath>os_q.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>5</GroupNumber>
-      <FileNumber>103</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii\os_sem.c</PathWithFileName>
-      <FilenameWithoutPath>os_sem.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>5</GroupNumber>
-      <FileNumber>104</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii\os_task.c</PathWithFileName>
-      <FilenameWithoutPath>os_task.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>5</GroupNumber>
-      <FileNumber>105</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii\os_time.c</PathWithFileName>
-      <FilenameWithoutPath>os_time.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>5</GroupNumber>
-      <FileNumber>106</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii\os_tmr.c</PathWithFileName>
-      <FilenameWithoutPath>os_tmr.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>5</GroupNumber>
-      <FileNumber>107</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii\os.h</PathWithFileName>
-      <FilenameWithoutPath>os.h</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>5</GroupNumber>
-      <FileNumber>108</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii\ucos_ii.h</PathWithFileName>
-      <FilenameWithoutPath>ucos_ii.h</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-  </Group>
-
-  <Group>
-    <GroupName>ucos_ii/port</GroupName>
-    <tvExp>0</tvExp>
-    <tvExpOptDlg>0</tvExpOptDlg>
-    <cbSel>0</cbSel>
-    <RteFlg>0</RteFlg>
-    <File>
-      <GroupNumber>6</GroupNumber>
-      <FileNumber>109</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii\Ports\ARM-Cortex-M4\RealView\os_cpu.h</PathWithFileName>
-      <FilenameWithoutPath>os_cpu.h</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>6</GroupNumber>
-      <FileNumber>110</FileNumber>
-      <FileType>2</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii\Ports\ARM-Cortex-M4\RealView\os_cpu_a.asm</PathWithFileName>
-      <FilenameWithoutPath>os_cpu_a.asm</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>6</GroupNumber>
-      <FileNumber>111</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii\Ports\ARM-Cortex-M4\RealView\os_cpu_c.c</PathWithFileName>
-      <FilenameWithoutPath>os_cpu_c.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>6</GroupNumber>
-      <FileNumber>112</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii\Ports\ARM-Cortex-M4\RealView\os_dbg.c</PathWithFileName>
-      <FilenameWithoutPath>os_dbg.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_bsp\cpu_bsp.c</PathWithFileName>
+      <FilenameWithoutPath>cpu_bsp.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1606,14 +1459,178 @@
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
     <File>
-      <GroupNumber>7</GroupNumber>
-      <FileNumber>113</FileNumber>
+      <GroupNumber>6</GroupNumber>
+      <FileNumber>100</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_cfg\app_cfg.h</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_inc\ucos_ii_cfg\app_cfg.h</PathWithFileName>
       <FilenameWithoutPath>app_cfg.h</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>6</GroupNumber>
+      <FileNumber>101</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_inc\ucos_ii_cfg\cpu_cfg.h</PathWithFileName>
+      <FilenameWithoutPath>cpu_cfg.h</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>6</GroupNumber>
+      <FileNumber>102</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_inc\ucos_ii_cfg\lib_cfg.h</PathWithFileName>
+      <FilenameWithoutPath>lib_cfg.h</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>6</GroupNumber>
+      <FileNumber>103</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_inc\ucos_ii_cfg\os_cfg.h</PathWithFileName>
+      <FilenameWithoutPath>os_cfg.h</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+  </Group>
+
+  <Group>
+    <GroupName>ucos_ii/core</GroupName>
+    <tvExp>0</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <RteFlg>0</RteFlg>
+    <File>
+      <GroupNumber>7</GroupNumber>
+      <FileNumber>104</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_core\os_core.c</PathWithFileName>
+      <FilenameWithoutPath>os_core.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>7</GroupNumber>
+      <FileNumber>105</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_core\os_flag.c</PathWithFileName>
+      <FilenameWithoutPath>os_flag.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>7</GroupNumber>
+      <FileNumber>106</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_core\os_mbox.c</PathWithFileName>
+      <FilenameWithoutPath>os_mbox.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>7</GroupNumber>
+      <FileNumber>107</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_core\os_mem.c</PathWithFileName>
+      <FilenameWithoutPath>os_mem.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>7</GroupNumber>
+      <FileNumber>108</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_core\os_mutex.c</PathWithFileName>
+      <FilenameWithoutPath>os_mutex.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>7</GroupNumber>
+      <FileNumber>109</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_core\os_q.c</PathWithFileName>
+      <FilenameWithoutPath>os_q.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>7</GroupNumber>
+      <FileNumber>110</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_core\os_sem.c</PathWithFileName>
+      <FilenameWithoutPath>os_sem.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>7</GroupNumber>
+      <FileNumber>111</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_core\os_task.c</PathWithFileName>
+      <FilenameWithoutPath>os_task.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>7</GroupNumber>
+      <FileNumber>112</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_core\os_time.c</PathWithFileName>
+      <FilenameWithoutPath>os_time.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>7</GroupNumber>
+      <FileNumber>113</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_core\os_tmr.c</PathWithFileName>
+      <FilenameWithoutPath>os_tmr.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1624,8 +1641,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_cfg\cpu_cfg.h</PathWithFileName>
-      <FilenameWithoutPath>cpu_cfg.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\ucos_ii_core\ucos_ii.h</PathWithFileName>
+      <FilenameWithoutPath>ucos_ii.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1636,136 +1653,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_cfg\os_cfg.h</PathWithFileName>
-      <FilenameWithoutPath>os_cfg.h</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-  </Group>
-
-  <Group>
-    <GroupName>ucos_ii/lib</GroupName>
-    <tvExp>0</tvExp>
-    <tvExpOptDlg>0</tvExpOptDlg>
-    <cbSel>0</cbSel>
-    <RteFlg>0</RteFlg>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>116</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_lib\lib_ascii.c</PathWithFileName>
-      <FilenameWithoutPath>lib_ascii.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>117</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_lib\lib_ascii.h</PathWithFileName>
-      <FilenameWithoutPath>lib_ascii.h</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>118</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_lib\lib_def.h</PathWithFileName>
-      <FilenameWithoutPath>lib_def.h</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>119</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_lib\lib_math.c</PathWithFileName>
-      <FilenameWithoutPath>lib_math.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>120</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_lib\lib_math.h</PathWithFileName>
-      <FilenameWithoutPath>lib_math.h</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>121</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_lib\lib_mem.c</PathWithFileName>
-      <FilenameWithoutPath>lib_mem.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>122</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_lib\lib_mem.h</PathWithFileName>
-      <FilenameWithoutPath>lib_mem.h</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>123</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_lib\lib_str.c</PathWithFileName>
-      <FilenameWithoutPath>lib_str.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>124</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_lib\lib_str.h</PathWithFileName>
-      <FilenameWithoutPath>lib_str.h</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
-      <FileNumber>125</FileNumber>
-      <FileType>2</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_lib\Ports\ARM-Cortex-M4\RealView\lib_mem_a.asm</PathWithFileName>
-      <FilenameWithoutPath>lib_mem_a.asm</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\ucos_ii_core\os.h</PathWithFileName>
+      <FilenameWithoutPath>os.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1778,14 +1667,142 @@
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
     <File>
-      <GroupNumber>9</GroupNumber>
-      <FileNumber>126</FileNumber>
+      <GroupNumber>8</GroupNumber>
+      <FileNumber>116</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_cpu\cpu_core.c</PathWithFileName>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_cpu\cpu_core.c</PathWithFileName>
       <FilenameWithoutPath>cpu_core.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>8</GroupNumber>
+      <FileNumber>117</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_cpu\ARM-Cortex-M4\RealView\cpu_c.c</PathWithFileName>
+      <FilenameWithoutPath>cpu_c.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>8</GroupNumber>
+      <FileNumber>118</FileNumber>
+      <FileType>2</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_cpu\ARM-Cortex-M4\RealView\cpu_a.asm</PathWithFileName>
+      <FilenameWithoutPath>cpu_a.asm</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>8</GroupNumber>
+      <FileNumber>119</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_inc\ucos_ii_cpu\cpu_core.h</PathWithFileName>
+      <FilenameWithoutPath>cpu_core.h</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>8</GroupNumber>
+      <FileNumber>120</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_inc\ucos_ii_cpu\cpu_def.h</PathWithFileName>
+      <FilenameWithoutPath>cpu_def.h</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>8</GroupNumber>
+      <FileNumber>121</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_inc\ucos_ii_cpu\ARM-Cortex-M4\RealView\cpu.h</PathWithFileName>
+      <FilenameWithoutPath>cpu.h</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+  </Group>
+
+  <Group>
+    <GroupName>ucos_ii/lib</GroupName>
+    <tvExp>0</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <RteFlg>0</RteFlg>
+    <File>
+      <GroupNumber>9</GroupNumber>
+      <FileNumber>122</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_lib\lib_ascii.c</PathWithFileName>
+      <FilenameWithoutPath>lib_ascii.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>9</GroupNumber>
+      <FileNumber>123</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_lib\lib_math.c</PathWithFileName>
+      <FilenameWithoutPath>lib_math.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>9</GroupNumber>
+      <FileNumber>124</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_lib\lib_mem.c</PathWithFileName>
+      <FilenameWithoutPath>lib_mem.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>9</GroupNumber>
+      <FileNumber>125</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_lib\lib_str.c</PathWithFileName>
+      <FilenameWithoutPath>lib_str.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>9</GroupNumber>
+      <FileNumber>126</FileNumber>
+      <FileType>2</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_lib\Ports\ARM-Cortex-M4\RealView\lib_mem_a.asm</PathWithFileName>
+      <FilenameWithoutPath>lib_mem_a.asm</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1796,8 +1813,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_cpu\cpu_core.h</PathWithFileName>
-      <FilenameWithoutPath>cpu_core.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\ucos_ii_lib\lib_ascii.h</PathWithFileName>
+      <FilenameWithoutPath>lib_ascii.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1808,8 +1825,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_cpu\cpu_def.h</PathWithFileName>
-      <FilenameWithoutPath>cpu_def.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\ucos_ii_lib\lib_def.h</PathWithFileName>
+      <FilenameWithoutPath>lib_def.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1820,52 +1837,52 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_cpu\ARM-Cortex-M4\RealView\cpu.h</PathWithFileName>
-      <FilenameWithoutPath>cpu.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\ucos_ii_lib\lib_math.h</PathWithFileName>
+      <FilenameWithoutPath>lib_math.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>9</GroupNumber>
       <FileNumber>130</FileNumber>
-      <FileType>2</FileType>
+      <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_cpu\ARM-Cortex-M4\RealView\cpu_a.asm</PathWithFileName>
-      <FilenameWithoutPath>cpu_a.asm</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\ucos_ii_lib\lib_mem.h</PathWithFileName>
+      <FilenameWithoutPath>lib_mem.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>9</GroupNumber>
       <FileNumber>131</FileNumber>
-      <FileType>1</FileType>
+      <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_cpu\ARM-Cortex-M4\RealView\cpu_c.c</PathWithFileName>
-      <FilenameWithoutPath>cpu_c.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\ucos_ii_lib\lib_str.h</PathWithFileName>
+      <FilenameWithoutPath>lib_str.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
   </Group>
 
   <Group>
-    <GroupName>ucos_ii/bsp</GroupName>
-    <tvExp>1</tvExp>
+    <GroupName>ucos_ii/port</GroupName>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>10</GroupNumber>
       <FileNumber>132</FileNumber>
-      <FileType>1</FileType>
+      <FileType>2</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_bsp\bsp_int.c</PathWithFileName>
-      <FilenameWithoutPath>bsp_int.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_ports\ARM-Cortex-M4\RealView\os_cpu_a.asm</PathWithFileName>
+      <FilenameWithoutPath>os_cpu_a.asm</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1876,56 +1893,32 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_bsp\cpu_bsp.c</PathWithFileName>
-      <FilenameWithoutPath>cpu_bsp.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_ports\ARM-Cortex-M4\RealView\os_cpu_c.c</PathWithFileName>
+      <FilenameWithoutPath>os_cpu_c.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
       <FileNumber>134</FileNumber>
-      <FileType>5</FileType>
+      <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_bsp\bsp_int.h</PathWithFileName>
-      <FilenameWithoutPath>bsp_int.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_src\ucos_ii_ports\ARM-Cortex-M4\RealView\os_dbg.c</PathWithFileName>
+      <FilenameWithoutPath>os_dbg.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
       <FileNumber>135</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_bsp\app_hooks.c</PathWithFileName>
-      <FilenameWithoutPath>app_hooks.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>10</GroupNumber>
-      <FileNumber>136</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_bsp\bsp.c</PathWithFileName>
-      <FilenameWithoutPath>bsp.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>10</GroupNumber>
-      <FileNumber>137</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\src\ucos_ii_bsp\bsp.h</PathWithFileName>
-      <FilenameWithoutPath>bsp.h</FilenameWithoutPath>
+      <PathWithFileName>..\..\src\ucos_inc\ucos_ii_ports\ARM-Cortex-M4\RealView\os_cpu.h</PathWithFileName>
+      <FilenameWithoutPath>os_cpu.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

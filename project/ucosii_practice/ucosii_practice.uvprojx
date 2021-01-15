@@ -337,7 +337,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx, USE_STDPERIPH_DRIVER, ARM_MATH_CM4, __TARGET_FPU_VFP, __FPU_PRESENT=1</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\src\MCU\CMSIS_M4;..\..\src\MCU\STM32F4XX;..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc;..\..\src\ucos_ii;..\..\src\ucos_ii_cfg;..\..\src\ucos_ii\Ports\ARM-Cortex-M4\RealView;..\..\src\ucos_ii_lib;..\..\src\ucos_ii_cpu;..\..\src\ucos_ii_cpu\ARM-Cortex-M4\RealView;..\..\src\bsp;..\..\src\app;..\..\src\ucos_ii_bsp</IncludePath>
+              <IncludePath>..\..\src\ucos_inc\mcu\CMSIS_M4;..\..\src\ucos_inc\mcu\STM32F4XX;..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph;..\..\src\ucos_inc\ucos_ii_bsp;..\..\src\ucos_inc\ucos_ii_cfg;..\..\src\ucos_inc\ucos_ii_core;..\..\src\ucos_inc\ucos_ii_core\ARM-Cortex-M4\RealView;..\..\src\ucos_inc\ucos_ii_cpu;..\..\src\ucos_inc\ucos_ii_cpu\ARM-Cortex-M4\RealView;..\..\src\ucos_inc\ucos_ii_lib;..\..\src\ucos_inc\ucos_ii_ports;..\..\src\ucos_inc\ucos_ii_ports\ARM-Cortex-M4\RealView</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -397,44 +397,44 @@
           <GroupName>cmsis</GroupName>
           <Files>
             <File>
+              <FileName>arm_cortexM4lf_math.lib</FileName>
+              <FileType>4</FileType>
+              <FilePath>..\..\src\ucos_src\mcu\CMSIS_M4\arm_cortexM4lf_math.lib</FilePath>
+            </File>
+            <File>
               <FileName>arm_common_tables.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\CMSIS_M4\arm_common_tables.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\CMSIS_M4\arm_common_tables.h</FilePath>
             </File>
             <File>
               <FileName>arm_const_structs.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\CMSIS_M4\arm_const_structs.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\CMSIS_M4\arm_const_structs.h</FilePath>
             </File>
             <File>
               <FileName>arm_math.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\CMSIS_M4\arm_math.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\CMSIS_M4\arm_math.h</FilePath>
             </File>
             <File>
               <FileName>core_cm4.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\CMSIS_M4\core_cm4.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\CMSIS_M4\core_cm4.h</FilePath>
             </File>
             <File>
               <FileName>core_cmFunc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\CMSIS_M4\core_cmFunc.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\CMSIS_M4\core_cmFunc.h</FilePath>
             </File>
             <File>
               <FileName>core_cmInstr.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\CMSIS_M4\core_cmInstr.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\CMSIS_M4\core_cmInstr.h</FilePath>
             </File>
             <File>
               <FileName>core_cmSimd.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\CMSIS_M4\core_cmSimd.h</FilePath>
-            </File>
-            <File>
-              <FileName>arm_cortexM4lf_math.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>..\..\src\MCU\CMSIS_M4\arm_cortexM4lf_math.lib</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\CMSIS_M4\core_cmSimd.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -442,29 +442,29 @@
           <GroupName>stm32f4xx</GroupName>
           <Files>
             <File>
+              <FileName>startup_stm32f40xx.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4XX\startup_stm32f40xx.s</FilePath>
+            </File>
+            <File>
               <FileName>system_stm32f4xx.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4XX\system_stm32f4xx.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4XX\system_stm32f4xx.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4XX\stm32f4xx.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4XX\stm32f4xx.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_conf.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4XX\stm32f4xx_conf.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4XX\stm32f4xx_conf.h</FilePath>
             </File>
             <File>
               <FileName>system_stm32f4xx.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4XX\system_stm32f4xx.h</FilePath>
-            </File>
-            <File>
-              <FileName>startup_stm32f40xx.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>..\..\src\MCU\STM32F4XX\startup_stm32f40xx.s</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4XX\system_stm32f4xx.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -474,599 +474,427 @@
             <File>
               <FileName>misc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\misc.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\misc.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_adc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_adc.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_adc.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_can.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_can.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_can.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_cec.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_cec.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_cec.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_crc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_crc.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_crc.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_cryp.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_cryp.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_cryp.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_cryp_aes.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_cryp_aes.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_cryp_aes.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_cryp_des.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_cryp_des.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_cryp_des.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_cryp_tdes.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_cryp_tdes.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_cryp_tdes.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_dac.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_dac.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dac.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_dbgmcu.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_dbgmcu.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dbgmcu.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_dcmi.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_dcmi.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dcmi.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_dfsdm.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_dfsdm.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dfsdm.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_dma.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_dma.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dma.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_dma2d.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_dma2d.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dma2d.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_dsi.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_dsi.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dsi.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_exti.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_exti.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_exti.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_flash.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_flash.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_flash.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_flash_ramfunc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_flash_ramfunc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_fmc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_fmc.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <uC99>2</uC99>
-                    <uGnu>2</uGnu>
-                    <useXO>2</useXO>
-                    <v6Lang>0</v6Lang>
-                    <v6LangP>0</v6LangP>
-                    <vShortEn>2</vShortEn>
-                    <vShortWch>2</vShortWch>
-                    <v6Lto>2</v6Lto>
-                    <v6WtE>2</v6WtE>
-                    <v6Rtti>2</v6Rtti>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_flash_ramfunc.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_fmpi2c.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_fmpi2c.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <uC99>2</uC99>
-                    <uGnu>2</uGnu>
-                    <useXO>2</useXO>
-                    <v6Lang>0</v6Lang>
-                    <v6LangP>0</v6LangP>
-                    <vShortEn>2</vShortEn>
-                    <vShortWch>2</vShortWch>
-                    <v6Lto>2</v6Lto>
-                    <v6WtE>2</v6WtE>
-                    <v6Rtti>2</v6Rtti>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_fmpi2c.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_fsmc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_fsmc.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_fsmc.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_gpio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_gpio.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_gpio.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_hash.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_hash.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_hash.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_hash_md5.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_hash_md5.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_hash_md5.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_hash_sha1.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_hash_sha1.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_hash_sha1.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_i2c.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_i2c.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_i2c.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_iwdg.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_iwdg.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_iwdg.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_lptim.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_lptim.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_lptim.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_ltdc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_ltdc.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_ltdc.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_pwr.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_pwr.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_pwr.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_qspi.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_qspi.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_qspi.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_rcc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_rcc.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_rcc.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_rng.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_rng.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_rng.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_rtc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_rtc.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_rtc.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_sai.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_sai.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_sai.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_sdio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_sdio.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_sdio.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_spdifrx.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_spdifrx.c</FilePath>
-            </File>
-            <File>
-              <FileName>misc.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\misc.h</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_spdifrx.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_spi.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_spi.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_spi.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_syscfg.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_syscfg.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_syscfg.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_tim.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_tim.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_tim.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_usart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_usart.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_usart.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_wwdg.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\src\stm32f4xx_wwdg.c</FilePath>
+              <FilePath>..\..\src\ucos_src\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_wwdg.c</FilePath>
+            </File>
+            <File>
+              <FileName>misc.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\misc.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_adc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_adc.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_adc.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_can.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_can.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_can.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_cec.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_cec.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_cec.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_crc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_crc.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_crc.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_cryp.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_cryp.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_cryp.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_dac.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_dac.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dac.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_dbgmcu.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_dbgmcu.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dbgmcu.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_dcmi.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_dcmi.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dcmi.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_dfsdm.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_dfsdm.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dfsdm.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_dma.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_dma.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dma.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_dma2d.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_dma2d.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dma2d.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_dsi.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_dsi.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_dsi.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_exti.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_exti.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_exti.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_flash.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_flash.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_flash.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_flash_ramfunc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_flash_ramfunc.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_flash_ramfunc.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_fmc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_fmc.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_fmc.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_fmpi2c.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_fmpi2c.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_fmpi2c.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_fsmc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_fsmc.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_fsmc.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_gpio.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_gpio.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_gpio.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_hash.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_hash.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_hash.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_i2c.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_i2c.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_i2c.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_iwdg.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_iwdg.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_iwdg.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_lptim.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_lptim.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_lptim.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_ltdc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_ltdc.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_ltdc.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_pwr.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_pwr.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_pwr.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_qspi.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_qspi.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_qspi.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_rcc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_rcc.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_rcc.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_rng.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_rng.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_rng.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_rtc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_rtc.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_rtc.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_sai.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_sai.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_sai.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_sdio.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_sdio.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_sdio.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_spdifrx.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_spdifrx.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_spdifrx.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_spi.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_spi.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_spi.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_syscfg.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_syscfg.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_syscfg.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_tim.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_tim.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_tim.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_usart.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_usart.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_usart.h</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_wwdg.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc\stm32f4xx_wwdg.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\mcu\STM32F4xx_DSP_StdPeriph\stm32f4xx_wwdg.h</FilePath>
             </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>ucos_ii/core</GroupName>
+          <GroupName>ucos_ii/bsp</GroupName>
           <Files>
             <File>
-              <FileName>os_core.c</FileName>
+              <FileName>app_hooks.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii\os_core.c</FilePath>
+              <FilePath>..\..\src\ucos_src\ucos_ii_bsp\app_hooks.c</FilePath>
             </File>
             <File>
-              <FileName>os_flag.c</FileName>
+              <FileName>bsp.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii\os_flag.c</FilePath>
+              <FilePath>..\..\src\ucos_src\ucos_ii_bsp\bsp.c</FilePath>
             </File>
             <File>
-              <FileName>os_mbox.c</FileName>
+              <FileName>bsp_int.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii\os_mbox.c</FilePath>
+              <FilePath>..\..\src\ucos_src\ucos_ii_bsp\bsp_int.c</FilePath>
             </File>
             <File>
-              <FileName>os_mem.c</FileName>
+              <FileName>cpu_bsp.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii\os_mem.c</FilePath>
-            </File>
-            <File>
-              <FileName>os_mutex.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii\os_mutex.c</FilePath>
-            </File>
-            <File>
-              <FileName>os_q.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii\os_q.c</FilePath>
-            </File>
-            <File>
-              <FileName>os_sem.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii\os_sem.c</FilePath>
-            </File>
-            <File>
-              <FileName>os_task.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii\os_task.c</FilePath>
-            </File>
-            <File>
-              <FileName>os_time.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii\os_time.c</FilePath>
-            </File>
-            <File>
-              <FileName>os_tmr.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii\os_tmr.c</FilePath>
-            </File>
-            <File>
-              <FileName>os.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\src\ucos_ii\os.h</FilePath>
-            </File>
-            <File>
-              <FileName>ucos_ii.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\src\ucos_ii\ucos_ii.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>ucos_ii/port</GroupName>
-          <Files>
-            <File>
-              <FileName>os_cpu.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\src\ucos_ii\Ports\ARM-Cortex-M4\RealView\os_cpu.h</FilePath>
-            </File>
-            <File>
-              <FileName>os_cpu_a.asm</FileName>
-              <FileType>2</FileType>
-              <FilePath>..\..\src\ucos_ii\Ports\ARM-Cortex-M4\RealView\os_cpu_a.asm</FilePath>
-            </File>
-            <File>
-              <FileName>os_cpu_c.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii\Ports\ARM-Cortex-M4\RealView\os_cpu_c.c</FilePath>
-            </File>
-            <File>
-              <FileName>os_dbg.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii\Ports\ARM-Cortex-M4\RealView\os_dbg.c</FilePath>
+              <FilePath>..\..\src\ucos_src\ucos_ii_bsp\cpu_bsp.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1076,72 +904,87 @@
             <File>
               <FileName>app_cfg.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\ucos_ii_cfg\app_cfg.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\ucos_ii_cfg\app_cfg.h</FilePath>
             </File>
             <File>
               <FileName>cpu_cfg.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\ucos_ii_cfg\cpu_cfg.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\ucos_ii_cfg\cpu_cfg.h</FilePath>
+            </File>
+            <File>
+              <FileName>lib_cfg.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\src\ucos_inc\ucos_ii_cfg\lib_cfg.h</FilePath>
             </File>
             <File>
               <FileName>os_cfg.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\ucos_ii_cfg\os_cfg.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\ucos_ii_cfg\os_cfg.h</FilePath>
             </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>ucos_ii/lib</GroupName>
+          <GroupName>ucos_ii/core</GroupName>
           <Files>
             <File>
-              <FileName>lib_ascii.c</FileName>
+              <FileName>os_core.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii_lib\lib_ascii.c</FilePath>
+              <FilePath>..\..\src\ucos_src\ucos_ii_core\os_core.c</FilePath>
             </File>
             <File>
-              <FileName>lib_ascii.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\src\ucos_ii_lib\lib_ascii.h</FilePath>
-            </File>
-            <File>
-              <FileName>lib_def.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\src\ucos_ii_lib\lib_def.h</FilePath>
-            </File>
-            <File>
-              <FileName>lib_math.c</FileName>
+              <FileName>os_flag.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii_lib\lib_math.c</FilePath>
+              <FilePath>..\..\src\ucos_src\ucos_ii_core\os_flag.c</FilePath>
             </File>
             <File>
-              <FileName>lib_math.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\src\ucos_ii_lib\lib_math.h</FilePath>
-            </File>
-            <File>
-              <FileName>lib_mem.c</FileName>
+              <FileName>os_mbox.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii_lib\lib_mem.c</FilePath>
+              <FilePath>..\..\src\ucos_src\ucos_ii_core\os_mbox.c</FilePath>
             </File>
             <File>
-              <FileName>lib_mem.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\src\ucos_ii_lib\lib_mem.h</FilePath>
-            </File>
-            <File>
-              <FileName>lib_str.c</FileName>
+              <FileName>os_mem.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii_lib\lib_str.c</FilePath>
+              <FilePath>..\..\src\ucos_src\ucos_ii_core\os_mem.c</FilePath>
             </File>
             <File>
-              <FileName>lib_str.h</FileName>
+              <FileName>os_mutex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\ucos_src\ucos_ii_core\os_mutex.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_q.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\ucos_src\ucos_ii_core\os_q.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_sem.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\ucos_src\ucos_ii_core\os_sem.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\ucos_src\ucos_ii_core\os_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_time.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\ucos_src\ucos_ii_core\os_time.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_tmr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\ucos_src\ucos_ii_core\os_tmr.c</FilePath>
+            </File>
+            <File>
+              <FileName>ucos_ii.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\ucos_ii_lib\lib_str.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\ucos_ii_core\ucos_ii.h</FilePath>
             </File>
             <File>
-              <FileName>lib_mem_a.asm</FileName>
-              <FileType>2</FileType>
-              <FilePath>..\..\src\ucos_ii_lib\Ports\ARM-Cortex-M4\RealView\lib_mem_a.asm</FilePath>
+              <FileName>os.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\src\ucos_inc\ucos_ii_core\os.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -1151,67 +994,112 @@
             <File>
               <FileName>cpu_core.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii_cpu\cpu_core.c</FilePath>
-            </File>
-            <File>
-              <FileName>cpu_core.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\src\ucos_ii_cpu\cpu_core.h</FilePath>
-            </File>
-            <File>
-              <FileName>cpu_def.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\src\ucos_ii_cpu\cpu_def.h</FilePath>
-            </File>
-            <File>
-              <FileName>cpu.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\src\ucos_ii_cpu\ARM-Cortex-M4\RealView\cpu.h</FilePath>
-            </File>
-            <File>
-              <FileName>cpu_a.asm</FileName>
-              <FileType>2</FileType>
-              <FilePath>..\..\src\ucos_ii_cpu\ARM-Cortex-M4\RealView\cpu_a.asm</FilePath>
+              <FilePath>..\..\src\ucos_src\ucos_ii_cpu\cpu_core.c</FilePath>
             </File>
             <File>
               <FileName>cpu_c.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii_cpu\ARM-Cortex-M4\RealView\cpu_c.c</FilePath>
+              <FilePath>..\..\src\ucos_src\ucos_ii_cpu\ARM-Cortex-M4\RealView\cpu_c.c</FilePath>
+            </File>
+            <File>
+              <FileName>cpu_a.asm</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\src\ucos_src\ucos_ii_cpu\ARM-Cortex-M4\RealView\cpu_a.asm</FilePath>
+            </File>
+            <File>
+              <FileName>cpu_core.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\src\ucos_inc\ucos_ii_cpu\cpu_core.h</FilePath>
+            </File>
+            <File>
+              <FileName>cpu_def.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\src\ucos_inc\ucos_ii_cpu\cpu_def.h</FilePath>
+            </File>
+            <File>
+              <FileName>cpu.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\src\ucos_inc\ucos_ii_cpu\ARM-Cortex-M4\RealView\cpu.h</FilePath>
             </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>ucos_ii/bsp</GroupName>
+          <GroupName>ucos_ii/lib</GroupName>
           <Files>
             <File>
-              <FileName>bsp_int.c</FileName>
+              <FileName>lib_ascii.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii_bsp\bsp_int.c</FilePath>
+              <FilePath>..\..\src\ucos_src\ucos_ii_lib\lib_ascii.c</FilePath>
             </File>
             <File>
-              <FileName>cpu_bsp.c</FileName>
+              <FileName>lib_math.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii_bsp\cpu_bsp.c</FilePath>
+              <FilePath>..\..\src\ucos_src\ucos_ii_lib\lib_math.c</FilePath>
             </File>
             <File>
-              <FileName>bsp_int.h</FileName>
+              <FileName>lib_mem.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\ucos_src\ucos_ii_lib\lib_mem.c</FilePath>
+            </File>
+            <File>
+              <FileName>lib_str.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\ucos_src\ucos_ii_lib\lib_str.c</FilePath>
+            </File>
+            <File>
+              <FileName>lib_mem_a.asm</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\src\ucos_src\ucos_ii_lib\Ports\ARM-Cortex-M4\RealView\lib_mem_a.asm</FilePath>
+            </File>
+            <File>
+              <FileName>lib_ascii.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\ucos_ii_bsp\bsp_int.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\ucos_ii_lib\lib_ascii.h</FilePath>
             </File>
             <File>
-              <FileName>app_hooks.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii_bsp\app_hooks.c</FilePath>
-            </File>
-            <File>
-              <FileName>bsp.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\src\ucos_ii_bsp\bsp.c</FilePath>
-            </File>
-            <File>
-              <FileName>bsp.h</FileName>
+              <FileName>lib_def.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\src\ucos_ii_bsp\bsp.h</FilePath>
+              <FilePath>..\..\src\ucos_inc\ucos_ii_lib\lib_def.h</FilePath>
+            </File>
+            <File>
+              <FileName>lib_math.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\src\ucos_inc\ucos_ii_lib\lib_math.h</FilePath>
+            </File>
+            <File>
+              <FileName>lib_mem.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\src\ucos_inc\ucos_ii_lib\lib_mem.h</FilePath>
+            </File>
+            <File>
+              <FileName>lib_str.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\src\ucos_inc\ucos_ii_lib\lib_str.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>ucos_ii/port</GroupName>
+          <Files>
+            <File>
+              <FileName>os_cpu_a.asm</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\src\ucos_src\ucos_ii_ports\ARM-Cortex-M4\RealView\os_cpu_a.asm</FilePath>
+            </File>
+            <File>
+              <FileName>os_cpu_c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\ucos_src\ucos_ii_ports\ARM-Cortex-M4\RealView\os_cpu_c.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_dbg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\ucos_src\ucos_ii_ports\ARM-Cortex-M4\RealView\os_dbg.c</FilePath>
+            </File>
+            <File>
+              <FileName>os_cpu.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\src\ucos_inc\ucos_ii_ports\ARM-Cortex-M4\RealView\os_cpu.h</FilePath>
             </File>
           </Files>
         </Group>
