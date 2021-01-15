@@ -20,6 +20,7 @@ void led0_on(void);
 void led0_off(void);
 void led1_on(void);
 void led1_off(void);
+void led0_toggle(void);
 void led1_toggle(void);
 
 #ifdef __cplusplus

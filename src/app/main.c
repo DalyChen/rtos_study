@@ -7,7 +7,7 @@
  * Note: Copyright c 2021 FORWARDX ROBOTICS, Inc. All rights reserved
  * Remarks: 
  **********************************************************************/
-
+#include "led.h"
 #include "bsp.h"
 #include "bsp_int.h"
 
@@ -67,6 +67,18 @@ int main(void)
     return 0;
 }
 
+void peripheral_init(void)
+{
+    OS_CPU_SR cpu_sr = OS_CPU_SR_Save();        // 保存中断状态，并禁中断
+
+    led_config();
+    led0_on();
+    led1_off();
+
+    OS_CPU_SR_Restore(cpu_sr);                  // 回复中断状态
+}
+
+
 static void app_task_start(void *p_arg)
 {
     peripheral_init();
@@ -87,6 +99,8 @@ static void app_task_start(void *p_arg)
     while (DEF_TRUE) {              /* Task body, always written as an infinite loop. */
         OSTimeDly (1000);
         ;   // do nothing
+        led1_toggle();
+        led0_toggle();
     }
 }
 

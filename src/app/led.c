@@ -60,6 +60,17 @@ void led1_off(void)
 #define LED_ON_STATUS   0
 #define LED_OFF_STATUS  1
 
+void led0_toggle(void)
+{
+    uint8_t led_status = GPIO_ReadOutputDataBit(LED0_PORT, LED0_PIN);
+
+    if (led_status == LED_OFF_STATUS) {
+        led0_on();
+    } else {
+        led0_off();
+    }
+}
+
 void led1_toggle(void)
 {
     uint8_t led_status = GPIO_ReadOutputDataBit(LED1_PORT, LED1_PIN);
