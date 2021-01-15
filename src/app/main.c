@@ -8,7 +8,6 @@
  * Remarks: 
  **********************************************************************/
 
-#include "led.h"
 #include "bsp.h"
 #include "bsp_int.h"
 
@@ -18,21 +17,23 @@
 #include <stdint.h>
 
 
-static  OS_STK       AppTaskStartStk[APP_CFG_TASK_START_STK_SIZE];
+static OS_STK  app_task_start_stk[APP_CFG_TASK_START_STK_SIZE];
 
-static  void  AppTaskStart (void *p_arg);
+static void app_task_start(void *p_arg);
 
 
 
 uint8_t loop_en = 1;    /* Prevent compiler warning for 'main return' is unreachable! */
+
 int main(void)
 {
 #if (OS_TASK_NAME_EN > 0)
     CPU_INT08U  err;
 #endif
 
-    BSP_IntDisAll();                /* Disable all Interrupts.              */
-    bsp_init();
+    bsp_int_dis_all();                /* Disable all Interrupts.              */
+
+    systick_freq_config();
 
     Mem_Init();                     /* Initialize Memory Managment Module   */
     Math_Init();                    /* Initialize Mathematical Module       */
@@ -40,12 +41,12 @@ int main(void)
     OSInit();                       /* Init uC/OS-II.                       */
 
     OSTaskCreateExt(                /* Create the start task                */
-        AppTaskStart,
+        app_task_start,
         0,
-        &AppTaskStartStk[APP_CFG_TASK_START_STK_SIZE - 1],
+        &app_task_start_stk[APP_CFG_TASK_START_STK_SIZE - 1],
         APP_CFG_TASK_START_PRIO,
         APP_CFG_TASK_START_PRIO,
-        &AppTaskStartStk[0],
+        &app_task_start_stk[0],
         APP_CFG_TASK_START_STK_SIZE,
         0,
         (OS_TASK_OPT_STK_CHK | OS_TASK_OPT_STK_CLR));
@@ -57,7 +58,7 @@ int main(void)
         &err);
 #endif
 
-    OSStart();                                                  /* Start multitasking (i.e. give control to uC/OS-II).  */
+    OSStart();                      /* Start multitasking (i.e. give control to uC/OS-II).  */
 
     while (loop_en) {
         ;
@@ -66,27 +67,26 @@ int main(void)
     return 0;
 }
 
-static  void  AppTaskStart (void *p_arg)
+static void app_task_start(void *p_arg)
 {
-    // BSP_Init();                                                 /* Initialize BSP functions                             */
-    BSP_IntInit();
-    CPU_Init();                                                 /* Initialize the uC/CPU services                       */
+    peripheral_init();
+    bsp_int_init();
+
+    CPU_Init();                     /* Initialize the uC/CPU services */
 
 #if (OS_TASK_STAT_EN > 0)
-    OSStatInit();                                               /* Determine CPU capacity                               */
+    OSStatInit();                   /* Determine CPU capacity */
 #endif
 
 #ifdef CPU_CFG_INT_DIS_MEAS_EN
     CPU_IntDisMeasMaxCurReset();
 #endif
 
-#if (APP_CFG_SERIAL_EN == DEF_ENABLED)
-    App_SerialInit();                                           /* Initialize Serial Communication for Application ...  */
-#endif
+    ;   // Creat your task here
 
-    while (DEF_TRUE) {                                          /* Task body, always written as an infinite loop.       */
+    while (DEF_TRUE) {              /* Task body, always written as an infinite loop. */
         OSTimeDly (1000);
-        led1_toggle();
+        ;   // do nothing
     }
 }
 

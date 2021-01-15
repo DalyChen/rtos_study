@@ -88,21 +88,6 @@ __Vectors       DCD     __initial_sp               ; Top of Stack
                 DCD     OS_CPU_PendSVHandler              ; PendSV Handler
                 DCD     OS_CPU_SysTickHandler             ; SysTick Handler
 
-                ;DCD     NMI_Handler                ; NMI Handler
-                ;DCD     HardFault_Handler          ; Hard Fault Handler
-                ;DCD     MemManage_Handler          ; MPU Fault Handler
-                ;DCD     BusFault_Handler           ; Bus Fault Handler
-                ;DCD     UsageFault_Handler         ; Usage Fault Handler
-                ;DCD     0                          ; Reserved
-                ;DCD     0                          ; Reserved
-                ;DCD     0                          ; Reserved
-                ;DCD     0                          ; Reserved
-                ;DCD     SVC_Handler                ; SVCall Handler
-                ;DCD     DebugMon_Handler           ; Debug Monitor Handler
-                ;DCD     0                          ; Reserved
-                ;DCD     PendSV_Handler             ; PendSV Handler
-                ;DCD     SysTick_Handler            ; SysTick Handler
-
                 ; External Interrupts
                 DCD     WWDG_IRQHandler                   ; Window WatchDog                                        
                 DCD     PVD_IRQHandler                    ; PVD through EXTI Line detection                        

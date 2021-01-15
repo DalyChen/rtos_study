@@ -6,12 +6,12 @@
     "configurations": [
         {
             "name": "windows",
-            "defines": ["STM32F40_41xxx"],
+            "defines": ["STM32F40_41xxx", "__weak="],
             "includePath": [
                 "${SystemInclude}",
                 "${workspaceFolder}/app",
-                "${workspaceFolder}/bsp",
                 "${workspaceFolder}/ucos_ii",
+                "${workspaceFolder}/ucos_ii_bsp",
                 "${workspaceFolder}/ucos_ii/Ports/ARM-Cortex-M4/RealView",
                 "${workspaceFolder}/ucos_ii_cfg",
                 "${workspaceFolder}/ucos_ii_cpu",
@@ -26,8 +26,8 @@
                 "path": [
                     "${SystemInclude}",
                     "${workspaceFolder}/app",
-                    "${workspaceFolder}/bsp",
                     "${workspaceFolder}/ucos_ii",
+                    "${workspaceFolder}/ucos_ii_bsp",
                     "${workspaceFolder}/ucos_ii_cfg",
                     "${workspaceFolder}/ucos_ii_cpu",
                     "${workspaceFolder}/ucos_ii_cpu/ARM-Cortex-M4/RealView",

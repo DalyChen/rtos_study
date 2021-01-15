@@ -42,6 +42,8 @@
 #ifndef  OS_CPU_H
 #define  OS_CPU_H
 
+#include <lib_def.h>
+
 #ifdef   OS_CPU_GLOBALS
 #define  OS_CPU_EXT
 #else

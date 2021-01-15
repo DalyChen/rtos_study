@@ -337,7 +337,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx, USE_STDPERIPH_DRIVER, ARM_MATH_CM4, __TARGET_FPU_VFP, __FPU_PRESENT=1</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\src\MCU\CMSIS_M4;..\..\src\MCU\STM32F4XX;..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc;..\..\src\ucos_ii;..\..\src\ucos_ii_cfg;..\..\src\ucos_ii\Ports\ARM-Cortex-M4\RealView;..\..\src\ucos_ii_lib;..\..\src\ucos_ii_cpu;..\..\src\ucos_ii_cpu\ARM-Cortex-M4\RealView;..\..\src\bsp;..\..\src\app</IncludePath>
+              <IncludePath>..\..\src\MCU\CMSIS_M4;..\..\src\MCU\STM32F4XX;..\..\src\MCU\STM32F4xx_DSP_StdPeriph\inc;..\..\src\ucos_ii;..\..\src\ucos_ii_cfg;..\..\src\ucos_ii\Ports\ARM-Cortex-M4\RealView;..\..\src\ucos_ii_lib;..\..\src\ucos_ii_cpu;..\..\src\ucos_ii_cpu\ARM-Cortex-M4\RealView;..\..\src\bsp;..\..\src\app;..\..\src\ucos_ii_bsp</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1088,11 +1088,6 @@
               <FileType>5</FileType>
               <FilePath>..\..\src\ucos_ii_cfg\os_cfg.h</FilePath>
             </File>
-            <File>
-              <FileName>app_hooks.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\src\app\ucos_interface\app_hooks.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -1186,22 +1181,37 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>bsp</GroupName>
+          <GroupName>ucos_ii/bsp</GroupName>
           <Files>
+            <File>
+              <FileName>bsp_int.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\ucos_ii_bsp\bsp_int.c</FilePath>
+            </File>
             <File>
               <FileName>cpu_bsp.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\bsp\cpu_bsp.c</FilePath>
+              <FilePath>..\..\src\ucos_ii_bsp\cpu_bsp.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_int.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\src\ucos_ii_bsp\bsp_int.h</FilePath>
+            </File>
+            <File>
+              <FileName>app_hooks.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\ucos_ii_bsp\app_hooks.c</FilePath>
             </File>
             <File>
               <FileName>bsp.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\src\bsp\bsp.c</FilePath>
+              <FilePath>..\..\src\ucos_ii_bsp\bsp.c</FilePath>
             </File>
             <File>
-              <FileName>bsp_int.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\src\bsp\bsp_int.c</FilePath>
+              <FileName>bsp.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\src\ucos_ii_bsp\bsp.h</FilePath>
             </File>
           </Files>
         </Group>
